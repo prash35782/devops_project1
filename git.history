@@ -1,0 +1,103 @@
+    1  echo 40
+    2  echo $0
+    3  ifconfig
+    4  ip r
+    5  systemctl restart network
+    6  ip r
+    7  vi /etc/sysconfig/network-scripts/ifcfg-enp0s3
+    8  systemctl restart network
+    9  nmtui
+   10  cd Project
+   11  ls -l
+   12  cd project1
+   13  ls -l
+   14  git log 
+   15  git log --onelone
+   16  git log --oneline
+   17  git show 82b5516
+   18  git status
+   19  git --version
+   20  vi prashant.txt
+   21  git status
+   22  ls 
+   23  git ls-files
+   24  git add prashant.txt
+   25  git status
+   26  git ls-files
+   27  git commit -m "added prashant.txt"
+   28  git status
+   29  vi prashant.txt 
+   30  git status
+   31  git diff prashant.txt
+   32  git add prashant.txt
+   33  git status
+   34  git diff --staged prashant.txt
+   35  git diff prashant.txt
+   36  git status
+   37  git diff prashant.txt
+   38  git diff --staged prashant.txt
+   39  vi prashant.txt 
+   40  git status
+   41  git diff prashant.txt
+   42  git diff --staged prashant.txt
+   43  git add prashant.txt
+   44  git status
+   45  git diff prashant.txt
+   46  git diff --staged prashant.txt
+   47  git commit -m "added new content in prashant.txt"
+   48  git diff prashant.txt
+   49  git diff --staged prashant.txt
+   50  git log --oneline
+   51  git show 8be32e9
+   52  git show 991aaa3
+   53  vi prashant.txt
+   54  git status
+   55  git diff prashant.txt
+   56  git diff --staged prashant.txt
+   57  git commit -am " this is final commit"
+   58  pwd
+   59  ls -l
+   60  git status
+   61  git rm prashant.txt
+   62  ls -l
+   63  git ls-files
+   64  git status
+   65  git commit -m "deleted prashant.txt"
+   66  git status
+   67  git log --oneline
+   68  git revert 838ab62
+   69  git ls-files
+   70  git status
+   71  git revert 82b5516
+   72  git status
+   73  git ls-files
+   74  git log --oneline
+   75  git revert 40746cc
+   76  git ls-files
+   77  vi gitlog.txt
+   78  git add gitlog.txt
+   79  git commit -m "this is logfile"
+   80  git status
+   81  git rm --cached gitlog.txt
+   82  ls 
+   83  git status
+   84  ls -la
+   85  vi .gitignore
+   86  git status
+   87  git add .gitignore
+   88  git status
+   89  git commit -m "this is .gitignore file"
+   90  git status
+   91  ls 
+   92  ls -la
+   93  git ls-files
+   94  vi gitlog.txt
+   95  git status
+   96  git log oneline
+   97  git log --oneline
+   98  git revert 2eabad2
+   99  git ls-files
+  100  ls -l
+  101  history
+  102  ls -l
+  103  history > git.history
