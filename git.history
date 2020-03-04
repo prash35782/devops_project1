@@ -7,97 +7,128 @@
     7  vi /etc/sysconfig/network-scripts/ifcfg-enp0s3
     8  systemctl restart network
     9  nmtui
-   10  cd Project
-   11  ls -l
-   12  cd project1
-   13  ls -l
-   14  git log 
-   15  git log --onelone
-   16  git log --oneline
-   17  git show 82b5516
-   18  git status
-   19  git --version
-   20  vi prashant.txt
+   10  pwd
+   11  cd prashant
+   12  ls -l
+   13  cd Project
+   14  ls -l
+   15  cd project1
+   16  ls -l
+   17  git status
+   18  git add create.txt
+   19  git status
+   20  git commit -m "this is my second commit "
    21  git status
-   22  ls 
-   23  git ls-files
-   24  git add prashant.txt
-   25  git status
-   26  git ls-files
-   27  git commit -m "added prashant.txt"
-   28  git status
-   29  vi prashant.txt 
-   30  git status
-   31  git diff prashant.txt
-   32  git add prashant.txt
-   33  git status
-   34  git diff --staged prashant.txt
-   35  git diff prashant.txt
-   36  git status
-   37  git diff prashant.txt
-   38  git diff --staged prashant.txt
-   39  vi prashant.txt 
+   22  git log
+   23  git log --oneline
+   24  nmtui
+   25  pwd
+   26  cd Project
+   27  cd project1/
+   28  ls -l
+   29  git log --oneline
+   30  git ls-files
+   31  git reset help
+   32  git reset --help
+   33  git log --oneline
+   34  git ls-files
+   35  cat misha.txt 
+   36  git show 2a06ac5
+   37  git reset --hard 2a06ac5
+   38  git log --oneline
+   39  cat misha.txt 
    40  git status
-   41  git diff prashant.txt
-   42  git diff --staged prashant.txt
-   43  git add prashant.txt
-   44  git status
-   45  git diff prashant.txt
-   46  git diff --staged prashant.txt
-   47  git commit -m "added new content in prashant.txt"
-   48  git diff prashant.txt
-   49  git diff --staged prashant.txt
-   50  git log --oneline
-   51  git show 8be32e9
-   52  git show 991aaa3
-   53  vi prashant.txt
-   54  git status
-   55  git diff prashant.txt
-   56  git diff --staged prashant.txt
-   57  git commit -am " this is final commit"
-   58  pwd
-   59  ls -l
-   60  git status
-   61  git rm prashant.txt
-   62  ls -l
-   63  git ls-files
+   41  git log --oneline
+   42  git reset --soft b09ec65
+   43  git status
+   44  git diff misha.txt
+   45  git diff --staged misha.txt
+   46  git log --oneline
+   47  git commit -am "added after soft reset"
+   48  git log --oneline
+   49  git status
+   50  git reset --soft b09ec65
+   51  git status
+   52  git log --oneline
+   53  git commit -am "after proper soft reset"
+   54  git log --oneline
+   55  vi misha.txt 
+   56  git status
+   57  git add misha.txt
+   58  git commit -am "misha.txt got changed now"
+   59  git log --oneline
+   60  vi a.txt
+   61  git add a.txt
+   62  git commit -m "added a.txt"
+   63  git log --oneline
    64  git status
-   65  git commit -m "deleted prashant.txt"
-   66  git status
-   67  git log --oneline
-   68  git revert 838ab62
-   69  git ls-files
-   70  git status
-   71  git revert 82b5516
+   65  git reset --soft b09ec65
+   66  git log --oneline
+   67  git status
+   68  git commit -m "added a.txt and changes misha.txt"
+   69  git status
+   70  git log --oneline
+   71  cat misha.txt
    72  git status
-   73  git ls-files
-   74  git log --oneline
-   75  git revert 40746cc
+   73  pwd
+   74  git branch
+   75  git log --oneline
    76  git ls-files
-   77  vi gitlog.txt
-   78  git add gitlog.txt
-   79  git commit -m "this is logfile"
-   80  git status
-   81  git rm --cached gitlog.txt
-   82  ls 
-   83  git status
-   84  ls -la
-   85  vi .gitignore
-   86  git status
-   87  git add .gitignore
-   88  git status
-   89  git commit -m "this is .gitignore file"
-   90  git status
-   91  ls 
-   92  ls -la
+   77  git checkout -b branch1 
+   78  git branch
+   79  git ls-files
+   80  git log --oneline
+   81  git checkout master
+   82  git ls-files
+   83  git branch
+   84  git checkout branch1 
+   85  git branch
+   86  vi newfile.txt
+   87  git status
+   88  git checkout master
+   89  git status
+   90  git checkout branch1 
+   91  git add newfile.txt
+   92  git commit -m "added file in branch1"
    93  git ls-files
-   94  vi gitlog.txt
-   95  git status
-   96  git log oneline
-   97  git log --oneline
-   98  git revert 2eabad2
-   99  git ls-files
-  100  ls -l
-  101  history
-  102  ls -l
-  103  history > git.history
+   94  git checkout master
+   95  git ls-files
+   96  git branch
+   97  git merge branch1
+   98  git status
+   99  git log --oneline
+  100  git ls-files
+  101  cat newfile.txt
+  102  git checkout branch1 
+  103  git ls-files
+  104  vi newfile.txt
+  105  git status
+  106  git commit -am "added new content in branch1"
+  107  git branch
+  108  git merge branch1 master
+  109  git checkout master
+  110  git ls-files
+  111  git merge branch1
+  112  cat newfile.txt
+  113  git branch
+  114  vi san.txt
+  115  git add san.txt
+  116  git commit -m "added san.txt"
+  117  git status
+  118  git ls-files
+  119  git checkoy branch1
+  120  git checkout branch1
+  121  git branch
+  122  git ls-files
+  123  vi san.txt
+  124  git add san.txt
+  125  git commit -m "added san.txt in branch1"
+  126  git merge branch1 master
+  127  git checkout master
+  128  git merge branch1
+  129  vi san.txt 
+  130  git commit -m "added after conflicts"
+  131  git commit -am "added after conflicts"
+  132  git branch
+  133  git checkout master
+  134  history > git.history
