@@ -21,114 +21,28 @@
    21  git status
    22  git log
    23  git log --oneline
-   24  nmtui
-   25  pwd
-   26  cd Project
-   27  cd project1/
-   28  ls -l
-   29  git log --oneline
-   30  git ls-files
-   31  git reset help
-   32  git reset --help
-   33  git log --oneline
-   34  git ls-files
-   35  cat misha.txt 
-   36  git show 2a06ac5
-   37  git reset --hard 2a06ac5
-   38  git log --oneline
-   39  cat misha.txt 
-   40  git status
-   41  git log --oneline
-   42  git reset --soft b09ec65
-   43  git status
-   44  git diff misha.txt
-   45  git diff --staged misha.txt
-   46  git log --oneline
-   47  git commit -am "added after soft reset"
-   48  git log --oneline
-   49  git status
-   50  git reset --soft b09ec65
-   51  git status
-   52  git log --oneline
-   53  git commit -am "after proper soft reset"
-   54  git log --oneline
-   55  vi misha.txt 
-   56  git status
-   57  git add misha.txt
-   58  git commit -am "misha.txt got changed now"
-   59  git log --oneline
-   60  vi a.txt
-   61  git add a.txt
-   62  git commit -m "added a.txt"
-   63  git log --oneline
-   64  git status
-   65  git reset --soft b09ec65
-   66  git log --oneline
-   67  git status
-   68  git commit -m "added a.txt and changes misha.txt"
-   69  git status
-   70  git log --oneline
-   71  cat misha.txt
-   72  git status
-   73  pwd
-   74  git branch
-   75  git log --oneline
-   76  git ls-files
-   77  git checkout -b branch1 
-   78  git branch
-   79  git ls-files
-   80  git log --oneline
-   81  git checkout master
-   82  git ls-files
-   83  git branch
-   84  git checkout branch1 
-   85  git branch
-   86  vi newfile.txt
-   87  git status
-   88  git checkout master
-   89  git status
-   90  git checkout branch1 
-   91  git add newfile.txt
-   92  git commit -m "added file in branch1"
-   93  git ls-files
-   94  git checkout master
-   95  git ls-files
-   96  git branch
-   97  git merge branch1
-   98  git status
-   99  git log --oneline
-  100  git ls-files
-  101  cat newfile.txt
-  102  git checkout branch1 
-  103  git ls-files
-  104  vi newfile.txt
-  105  git status
-  106  git commit -am "added new content in branch1"
-  107  git branch
-  108  git merge branch1 master
-  109  git checkout master
-  110  git ls-files
-  111  git merge branch1
-  112  cat newfile.txt
-  113  git branch
-  114  vi san.txt
-  115  git add san.txt
-  116  git commit -m "added san.txt"
-  117  git status
-  118  git ls-files
-  119  git checkoy branch1
-  120  git checkout branch1
-  121  git branch
-  122  git ls-files
-  123  vi san.txt
-  124  git add san.txt
-  125  git commit -m "added san.txt in branch1"
-  126  git merge branch1 master
-  127  git checkout master
-  128  git merge branch1
-  129  vi san.txt 
-  130  git commit -m "added after conflicts"
-  131  git commit -am "added after conflicts"
-  132  git branch
-  133  git checkout master
-  134  history > git.history
+   24  cd Project
+   25  ls -l
+   26  cd project1
+   27  git branch
+   28  git remote add origin https://github.com/prash35782/devops_project1.git
+   29  git push -u origin master
+   30  pwd
+   31  git ls-files
+   32  vi vepsun.txt
+   33  git status
+   34  git add vepsun.txt
+   35  git commit -m "added vepsun.txt"
+   36  git push origin 
+   37  pwd
+   38  cd ../
+   39  ls -l
+   40  pwd
+   41  ls -l
+   42  cd *
+   43  ls -l
+   44  git branch
+   45  git log --oneline
+   46  git log --oneline master
+   47  git log --oneline branch1
+   48  history > git.history
